@@ -104,6 +104,7 @@ jobs:
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }} -y
 
   merge:
+    name: Merge
     runs-on: ubuntu-latest
     if: ${{ github.event_name != 'pull_request' }}
     needs:
