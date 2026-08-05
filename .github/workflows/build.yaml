@@ -45,6 +45,7 @@ jobs:
         with:
           persist-credentials: false
           repository: selkies-project/selkies
+          ref: 1d02f3f6a19796381a5bc513760a684bea9668a5
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
